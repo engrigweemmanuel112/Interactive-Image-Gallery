@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color:whitesmoke;
+
+}
+
+h1 {
+  text-align: center;
+  margin: 40px;
+  
+}
+
+button{
+  background-color: #8d5e5e;
+  padding: 10px;
+  font-size: 15px;
+  font-weight:bold;
+  border: none;
+  border-radius: 5px;
+  color: rgb(60, 201, 201);
+}
+
+input{
+  margin: 20px;
+  padding: 10px;
+  border: solid blue;
+  border-bottom: dotted;
+  border-radius: 20px;
+
+}
+
+::placeholder{
+  color: rgb(60, 201, 201);
+  font-style: italic;
+}
+
+#gallary{
+  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 10px;
+}
+
+.gallery-item img {
+  max-width: 200px;
+  max-height: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.gallery-item:hover .remove-button {
+  display: block;
+}
